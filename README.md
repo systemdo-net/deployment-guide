@@ -1,99 +1,99 @@
-<h1 align="center">🚀 SystemDo Deployment Guide</h1>
+<h1 align="center">🚀 SystemDo 部署运维指南</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Type-Deployment_Guide-0b5cff?style=flat-square" alt="Type">
-  <img src="https://img.shields.io/badge/Focus-Production_Ready-00b090?style=flat-square" alt="Focus">
-  <img src="https://img.shields.io/badge/Status-Active-00b090?style=flat-square" alt="Status">
-  <a href="https://systemdo.net"><img src="https://img.shields.io/badge/Website-systemdo.net-0b5cff?style=flat-square" alt="Website"></a>
+  <img src="https://img.shields.io/badge/类型-部署指南-0b5cff?style=flat-square" alt="类型">
+  <img src="https://img.shields.io/badge/定位-生产就绪-00b090?style=flat-square" alt="定位">
+  <img src="https://img.shields.io/badge/状态-持续更新-00b090?style=flat-square" alt="状态">
+  <a href="https://systemdo.net"><img src="https://img.shields.io/badge/官网-systemdo.net-0b5cff?style=flat-square" alt="官网"></a>
 </p>
 
 ---
 
-## 📖 About
+## 📖 项目介绍
 
-The **SystemDo Deployment Guide** covers everything you need to deploy, maintain, and monitor enterprise software in production. From single-server setups to cloud-native infrastructure, this guide captures our battle-tested practices from 1000+ project deployments.
+SystemDo 部署运维指南 — 覆盖企业软件从开发到生产环境的全流程。从单机部署到云原生架构，汇总了我们在 1000+ 项目中积累的部署运维实战经验。
 
-> **Our Philosophy:** Deployment is not an afterthought — it's a first-class engineering discipline. A well-deployed system is secure, observable, and maintainable.
+> **核心理念：** 部署不是事后考虑的事情，而是第一优先级的工程实践。好的部署意味着系统安全、可观测、可维护。
 
-## 📂 Guide Contents
+## 📂 指南目录
 
-### 🐧 Server & OS
+### 🐧 服务器与操作系统
 
-- Linux server initialization and hardening (Ubuntu, CentOS, Debian)
-- User management and SSH security
-- File system organization and permissions
-- Systemd service management
-- Log rotation and management
+- Linux 服务器初始化与安全加固（Ubuntu、CentOS、Debian）
+- 用户权限管理与 SSH 安全配置
+- 文件系统规划与权限控制
+- Systemd 服务管理
+- 日志轮转与管理策略
 
-### 🐳 Containerization
+### 🐳 容器化部署
 
-- Docker fundamentals for production
-- Multi-stage Dockerfile best practices
-- Docker Compose for multi-service applications
-- Container networking and volumes
-- Docker security hardening
+- Docker 生产环境最佳实践
+- 多阶段 Dockerfile 编写技巧
+- Docker Compose 多服务编排
+- 容器网络与数据卷管理
+- Docker 安全加固
 
-### 🗄️ Database & Storage
+### 🗄️ 数据库与存储
 
-- MySQL / MariaDB installation and optimization
-- Redis caching and session management
-- Database backup strategies (full, incremental, point-in-time)
-- Connection pooling and query optimization
-- Data migration strategies
+- MySQL / MariaDB 安装与性能优化
+- Redis 缓存与会话管理
+- 数据库备份策略（全量、增量、时间点恢复）
+- 连接池配置与查询优化
+- 数据迁移最佳实践
 
-### 🌐 Web Server & Proxy
+### 🌐 Web 服务器与反向代理
 
-- Nginx configuration and optimization
-- SSL/TLS certificate management (Let's Encrypt, commercial)
-- Reverse proxy patterns
-- Load balancing strategies
-- HTTP/2 and HTTP/3 setup
+- Nginx 配置与性能调优
+- SSL/TLS 证书管理（Let's Encrypt、商业证书）
+- 反向代理与负载均衡
+- HTTP/2 与 HTTP/3 启用
+- 静态资源 CDN 加速
 
-### ⚡ CI/CD
+### ⚡ CI/CD 持续集成
 
-- GitHub Actions workflow design
-- Automated testing in CI pipelines
-- Zero-downtime deployment strategies
-- Blue-green and canary deployments
-- Rollback procedures
+- GitHub Actions 工作流设计
+- CI 流水线中的自动化测试
+- 零停机部署策略
+- 蓝绿部署与金丝雀发布
+- 回滚操作规范
 
-### 📊 Monitoring & Observability
+### 📊 监控与可观测性
 
-- Application performance monitoring (APM)
-- Server health monitoring
-- Log aggregation and analysis
-- Alerting and incident response
-- Uptime monitoring
+- 应用性能监控（APM）
+- 服务器健康检查
+- 日志聚合与分析
+- 告警规则与事件响应
+- 在线率监控
 
-### ☁️ Cloud & Platforms
+### ☁️ 云服务与平台
 
-- Vercel deployment for frontend applications
-- Cloud server deployment (cloud providers)
-- CDN configuration and optimization
-- DNS management with Cloudflare
-- Cost optimization strategies
+- Vercel 前端应用部署
+- 云服务器部署方案
+- CDN 配置与优化
+- Cloudflare DNS 管理
+- 成本优化策略
 
-## 🎯 Who Is This For?
+## 🎯 适用人群
 
-- **DevOps Engineers** — Production-tested deployment patterns and automation
-- **Backend Developers** — Understanding the full deployment lifecycle
-- **Tech Leads** — Infrastructure architecture decisions
-- **Clients** — Understanding our deployment standards and reliability practices
+- **运维工程师** — 生产级部署方案与自动化脚本
+- **后端开发者** — 理解完整的部署生命周期
+- **技术负责人** — 基础设施架构决策参考
+- **企业客户** — 了解我们的部署标准和可靠性保障
 
-## 🗺️ Roadmap
+## 🗺️ 未来规划
 
-- [ ] Add Kubernetes deployment guide
-- [ ] Create infrastructure-as-code templates (Terraform)
-- [ ] Add security hardening checklist
-- [ ] Build one-click deployment scripts
-- [ ] Create disaster recovery playbook
-- [ ] Add cost optimization calculator
+- [ ] 增加 Kubernetes 部署指南
+- [ ] 发布基础设施即代码模板（Terraform）
+- [ ] 添加安全加固检查清单
+- [ ] 构建一键部署脚本工具
+- [ ] 编写灾备恢复预案
+- [ ] 推出成本优化计算器
 
-## 📄 License
+## 📄 开源协议
 
 MIT © SystemDo
 
-## 🔗 Links
+## 🔗 相关链接
 
-- **Website:** [https://systemdo.net](https://systemdo.net)
-- **Contact:** [wo18672433344@gmail.com](mailto:wo18672433344@gmail.com)
+- **官网：** [https://systemdo.net](https://systemdo.net)
+- **联系邮箱：** [wo18672433344@gmail.com](mailto:wo18672433344@gmail.com)
